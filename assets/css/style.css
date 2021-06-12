@@ -56,7 +56,19 @@ h1, h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-/* hero image */
+/* hero image and cover text */
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+
+    position: relative;
+}
+
+#cover-text, #cover-text h2 {
+    color: #fff;
+}
 
 #hero-image {
     height: 600px;
@@ -64,24 +76,12 @@ h1, h2 {
     background: url('../images/hero-image.webp') no-repeat center center;
 
     /* animates zoom effect on loading page */
-
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
 }
 
-#hero-outer {
-    height: 600px;
-    width: 100%;
-    overflow: hidden;
-    position: relative;
-}
-
-#cover-text, #cover-text h2 {
-    color: white;
-}
-
-/* creates the level of zoom for hero-image */
+/* creates the level of zoom for hero image */
 @keyframes hero-zoom {
     from{
         transform: scale(1);
@@ -99,12 +99,14 @@ h1, h2 {
 
     width: 300px;
     height: 200px;
+
     padding-top: 40px;
     padding-left: 10px;
+
     background-color: rgba(241, 109, 107, .7);
 
     bottom: 30px;
     right: 150px;
 
     position: absolute;
-}
+} 
